@@ -8,3 +8,4 @@ Esta é minha solução para resolver este teste técnico
 
 ### Criação do rds
 * Meu primeiro passo foi crirar um banco em uma nuvem [☁](#-cloud-) , e para isso eu utilizei o [AWS RDS](https://aws.amazon.com/pt/rds/?nc2=type_a)  indo em: serviços > RDS > Criar banco de dados
+* ![plot](.Prints/1.png)
