@@ -8,7 +8,10 @@ Esta é minha solução para resolver este teste técnico
 * [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2)
 * [Dbvear](https://dbeaver.io/download/)
 
-### Criação do rds
+## Modelagem conceitual dos dados
+![conceptual modeling drawio](https://user-images.githubusercontent.com/63296032/145213869-230ed9cd-d147-4e7a-aee2-8e72e1ca97cd.png)
+
+## Criação do rds
 * Meu primeiro passo foi crirar um banco em uma nuvem [☁](#-cloud-) , e para isso eu utilizei o [AWS RDS](https://aws.amazon.com/pt/rds/?nc2=type_a)  indo em: serviços > RDS > Criar banco de dados.
 ![1](https://user-images.githubusercontent.com/63296032/145125161-144f2d7b-1f60-4587-b99d-7fc92a1e358d.png)
 * A próxima etapa é configurar o banco, e eu vou deixar a criação padrão > selecionar o mecanismo postgreSQL > e utilizar a versão 12.8-R1 para poder utilizar em uso de nível gratuito.
@@ -24,7 +27,7 @@ Esta é minha solução para resolver este teste técnico
 * Para checar se está tudo certo eu vou utilizar o [Pgadmin](https://www.pgadmin.org) para conectar ao banco criado, eu preciso utilizar o Endpoint, a porta, o usuário e a senha que eu defini.
 * Com a conexão criada eu vou criar manualmente um schema para poder fazer a criação das tabelas.
 ![6](https://user-images.githubusercontent.com/63296032/145133638-00d55ce8-ebe5-438b-95d7-5f9f90dc133a.png)
-### Criando tabela e importando arquivos CSV
+## Criando tabela e importando arquivos CSV
 * Para isso vou utilizar o [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2), com ele aberto eu crio uma conexão com a pasta que estão meus arquivos csv
 ![pdi](https://user-images.githubusercontent.com/63296032/145195101-a684f117-2896-4053-8cdb-60b0f2f980cc.gif)
 * Com a conexão criada eu crio uma trasnformação e seleciono os meus inputs e outputs, como eu quero de um arquivo csv para uma tabela vou utilizar esses que o próprio pentaho disponibiliza
