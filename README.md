@@ -20,4 +20,8 @@ Esta é minha solução para resolver este teste técnico
 * Uma última configuração para conceder acesso externo é configurar uma regra de entrada para isso devo ir em: EC2 > Grupos de segurança > clicar no nome do grupo criado por padrão > editar regras de entrada > definir uma regra para todo o tráfego e todos os ips:
 ![5](https://user-images.githubusercontent.com/63296032/145130903-93915b76-befa-451b-9cb5-42b86fa0ffd7.png)
 * O banco já está criado e já pode ser utilizado.
-### Criação do rds
+* Para checar se está tudo certo eu vou utilizar o [Pgadmin](https://www.pgadmin.org) para conectar ao banco criado, eu preciso utilizar o Endpoint, a porta, o usuário e a senha que eu defini.
+* Com a conexão criada eu vou criar manualmente um schema para poder criar as tabelas.
+![6](https://user-images.githubusercontent.com/63296032/145133638-00d55ce8-ebe5-438b-95d7-5f9f90dc133a.png)
+### Criando tabela e importando arquivos CSV
+* Para isso vou utilizar o [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2)
