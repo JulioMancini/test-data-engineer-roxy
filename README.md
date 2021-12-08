@@ -4,6 +4,7 @@ Esta é minha solução para resolver este teste técnico
 ### Programas utilizados:
 * [AWS RDS](https://aws.amazon.com/pt/rds/?nc2=type_a)
 * [Postgresql](https://www.postgresql.org/)
+* [Pgadmin](https://www.pgadmin.org)
 * [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2)
 
 ### Criação do rds
