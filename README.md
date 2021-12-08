@@ -6,6 +6,7 @@ Esta é minha solução para resolver este teste técnico
 * [Postgresql](https://www.postgresql.org/)
 * [Pgadmin](https://www.pgadmin.org)
 * [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2)
+* [Dbvear](https://dbeaver.io/download/)
 
 ### Criação do rds
 * Meu primeiro passo foi crirar um banco em uma nuvem [☁](#-cloud-) , e para isso eu utilizei o [AWS RDS](https://aws.amazon.com/pt/rds/?nc2=type_a)  indo em: serviços > RDS > Criar banco de dados.
@@ -24,4 +25,4 @@ Esta é minha solução para resolver este teste técnico
 * Com a conexão criada eu vou criar manualmente um schema para poder criar as tabelas.
 ![6](https://user-images.githubusercontent.com/63296032/145133638-00d55ce8-ebe5-438b-95d7-5f9f90dc133a.png)
 ### Criando tabela e importando arquivos CSV
-* Para isso vou utilizar o [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2)
+* Para isso vou utilizar o [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2) 
