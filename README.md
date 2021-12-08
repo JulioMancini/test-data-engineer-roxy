@@ -39,4 +39,72 @@ Esta é minha solução para resolver este teste técnico
 ![pdi7](https://user-images.githubusercontent.com/63296032/145202956-4be769ea-86be-4955-8d07-d56c04209b76.gif)
 * Para validar os dados eu vou utilizar o [Dbvear](https://dbeaver.io/download/), dentro da interface eu faço a conexão com o RDS e valido seas tabelas estão criadas e se todas elas estão populadas.
 ![7](https://user-images.githubusercontent.com/63296032/145203311-23af3f72-cbed-41f4-982b-dfd8bfbc8d3c.png)
+## Análise de dados
+1.	Escreva uma query que retorna a quantidade de linhas na tabela Sales.SalesOrderDetail pelo campo SalesOrderID, desde que tenham pelo menos três linhas de detalhes.
+```sql
+with recursive cte1 as(
+SELECT 
+sod.salesorderid,
+count(salesorderid) as QTD
+FROM roxy.sales_order_detail sod 
+group by 1
+)
+select *
+from 
+cte1
+where qtd >=3
+```
+2.	Escreva uma query que ligue as tabelas Sales.SalesOrderDetail, Sales.SpecialOfferProduct e Production.Product e retorne os 3 produtos (Name) mais vendidos (pela soma de OrderQty), agrupados pelo número de dias para manufatura (DaysToManufacture).
+```sql
+select
+p.name_product,
+sum (orderqty),
+p.daystomanufacture
+from roxy.sales_order_detail sod
+join roxy.product p on p.productid = sod.productid
+join roxy.special_offer_product sop on sod.productid = sop.productid
+group by 3,1
+order by 2 desc
+limit 3
+```
+3. Escreva uma query ligando as tabelas Person.Person, Sales.Customer e Sales.SalesOrderHeader de forma a obter uma lista de nomes de clientes e uma contagem de pedidos efetuados.
+* Essa eu fiz duas SQL por questão de entendimento sobre como se comportavam os campos de nome na coleta, mas ambas funcionam da mesma forma.
+```sql
+with recursive cte1 as(
+select
+customerid,
+count (salesorderid) as qtd
+from roxy.sales_order_harder
+group by 1
+order by 2 desc
+) 
+,
+cte2 as(
+select
+p.firstname ||' '|| p.middlename ||' '|| p.lastname as nome,
+c.customerid 
+from roxy.person p
+join roxy.customer c on c.customerid = p.businessentityid
+)
+select 
+nome,
+qtd
+from cte1
+join cte2 on cte1.customerid = cte2.customerid
+order by 2 desc
+```
+OU
+```sql
+select
+p.firstname ||' '|| p.middlename ||' '|| p.lastname as nome,
+count(salesorderid)
+from roxy.person p 
+join roxy.customer cus on cus.customerid = p.businessentityid
+join roxy.sales_order_harder soh on p.businessentityid = soh.customerid
+group by 1
+order by 2 desc
+```
+4.	Escreva uma query usando as tabelas Sales.SalesOrderHeader, Sales.SalesOrderDetail e Production.Product, de forma a obter a soma total de produtos (OrderQty) por ProductID e OrderDate.
+```sql
 
+```
