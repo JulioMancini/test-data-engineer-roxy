@@ -37,7 +37,7 @@ Esta é minha solução para resolver este teste técnico
 ![pdi6](https://user-images.githubusercontent.com/63296032/145200551-111ecd4a-5d86-4405-a575-50912268ff0f.gif)
 * É só repitir isso para todas as tabelas e depois, para inserir o dado dentro delas eu executo a trasnformação.
 ![pdi7](https://user-images.githubusercontent.com/63296032/145202956-4be769ea-86be-4955-8d07-d56c04209b76.gif)
-* Para validar os dados eu vou utilizar o [Dbvear](https://dbeaver.io/download/), dentro da interface eu faço a conexão com o RDS e valido seas tabelas estão criadas e se todas elas estão populadas.
+* Para validar os dados eu vou utilizar o [Dbvear](https://dbeaver.io/download/), dentro da interface eu faço a conexão com o RDS e valido se as tabelas estão criadas e se todas elas estão populadas.
 ![7](https://user-images.githubusercontent.com/63296032/145203311-23af3f72-cbed-41f4-982b-dfd8bfbc8d3c.png)
 ## Análise de dados
 1.	Escreva uma query que retorna a quantidade de linhas na tabela Sales.SalesOrderDetail pelo campo SalesOrderID, desde que tenham pelo menos três linhas de detalhes.
