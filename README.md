@@ -29,3 +29,9 @@ Esta é minha solução para resolver este teste técnico
 ![pdi](https://user-images.githubusercontent.com/63296032/145195101-a684f117-2896-4053-8cdb-60b0f2f980cc.gif)
 * Com a conexão criada eu crio uma trasnformação e seleciono os meus inputs e outputs, como eu quero de um arquivo csv para uma tabela vou utilizar esses que o próprio pentaho disponibiliza
 ![pdi2](https://user-images.githubusercontent.com/63296032/145196486-087c6594-6fb0-4e24-875f-41b402d4a0e0.gif)
+* Agora é só selecionar o arquivo csv e definir como o pentaho enxerga os parametros dele e eu posso dar um preview pra validar se está tudo correto
+![pdi3](https://user-images.githubusercontent.com/63296032/145198480-d038cec1-0c74-43ba-b8ab-154d0ecdca45.gif)
+* Dentro do output da tabela tenho que colocar a conexão, e é aqui que eu coloco os dados do RDS
+![pdi4](https://user-images.githubusercontent.com/63296032/145199761-45563566-ae40-4498-b103-e8e1b9f12838.gif)
+* Agora o pentaho me disponibiliza um step importante. se não houver uma tabela com o nome que eu defini no banco ele me da uma SQL de criação que eu posso executar pelo próprio pentaho.
+
