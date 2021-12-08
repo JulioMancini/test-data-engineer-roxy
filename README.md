@@ -25,4 +25,7 @@ Esta é minha solução para resolver este teste técnico
 * Com a conexão criada eu vou criar manualmente um schema para poder criar as tabelas.
 ![6](https://user-images.githubusercontent.com/63296032/145133638-00d55ce8-ebe5-438b-95d7-5f9f90dc133a.png)
 ### Criando tabela e importando arquivos CSV
-* Para isso vou utilizar o [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2) 
+* Para isso vou utilizar o [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2), com ele aberto eu crio uma conexão com a pasta que estão meus arquivos csv
+![pdi](https://user-images.githubusercontent.com/63296032/145195101-a684f117-2896-4053-8cdb-60b0f2f980cc.gif)
+* Com a conexão criada eu crio uma trasnformação e seleciono os meus inputs e outputs, como eu quero de um arquivo csv para uma tabela vou utilizar esses que o próprio pentaho disponibiliza
+![pdi2](https://user-images.githubusercontent.com/63296032/145196486-087c6594-6fb0-4e24-875f-41b402d4a0e0.gif)
