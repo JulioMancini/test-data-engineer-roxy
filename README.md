@@ -7,6 +7,7 @@ Esta é minha solução para resolver este teste técnico
 * [Pgadmin](https://www.pgadmin.org)
 * [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2)
 * [Dbvear](https://dbeaver.io/download/)
+* [Diagrams](https://www.diagrams.net)
 
 ## Modelagem conceitual dos dados
 ![conceptual modeling drawio](https://user-images.githubusercontent.com/63296032/145213869-230ed9cd-d147-4e7a-aee2-8e72e1ca97cd.png)
