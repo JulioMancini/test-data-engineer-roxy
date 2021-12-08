@@ -34,4 +34,9 @@ Esta é minha solução para resolver este teste técnico
 * Dentro do output da tabela tenho que colocar a conexão, e é aqui que eu coloco os dados do RDS
 ![pdi4](https://user-images.githubusercontent.com/63296032/145199761-45563566-ae40-4498-b103-e8e1b9f12838.gif)
 * Agora o pentaho me disponibiliza um step importante. se não houver uma tabela com o nome que eu defini no banco ele me da uma SQL de criação que eu posso executar pelo próprio pentaho.
+![pdi6](https://user-images.githubusercontent.com/63296032/145200551-111ecd4a-5d86-4405-a575-50912268ff0f.gif)
+* É só repitir isso para todas as tabelas e depois, para inserir o dado dentro delas eu executo a trasnformação.
+![pdi7](https://user-images.githubusercontent.com/63296032/145202956-4be769ea-86be-4955-8d07-d56c04209b76.gif)
+* Para validar os dados eu vou utilizar o [Dbvear](https://dbeaver.io/download/), dentro da interface eu faço a conexão com o RDS e valido seas tabelas estão criadas e se todas elas estão populadas.
+![7](https://user-images.githubusercontent.com/63296032/145203311-23af3f72-cbed-41f4-982b-dfd8bfbc8d3c.png)
 
