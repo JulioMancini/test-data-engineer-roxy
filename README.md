@@ -6,7 +6,7 @@ Esta é minha solução para resolver este teste técnico
 * [Postgresql](https://www.postgresql.org/)
 * [Pgadmin](https://www.pgadmin.org)
 * [Pentaho Data Integration](https://help.hitachivantara.com/Documentation/Pentaho/9.2)
-* [Dbvear](https://dbeaver.io/download/)
+* [Dbeaver](https://dbeaver.io/download/)
 * [Diagrams](https://www.diagrams.net)
 
 ## Modelagem conceitual dos dados
